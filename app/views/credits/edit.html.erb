@@ -1,0 +1,6 @@
+<div>
+  <p>クレジットカードは登録済みです。</p>
+  <p>****-****-****-<%= current_user.stripe_information.credit_no_last4 %></p>
+  <%= form_tag(credit_path, method: :patch, id: "form_credits") do %>
+  <% end %>
+</div>

@@ -3,11 +3,11 @@
     <p>クレジットカードは登録済みです。</p>
     <p>****-****-****-<%= current_user.stripe_information.credit_no_last4 %></p>
     <%# 更新 %>
-    <%= form_tag(credits_path, method: :patch, id: "form_credits") do %>
+    <%= form_tag(credit_path, method: :patch, id: "form_credits") do %>
     <% end %>
 <% else %>
   <%# 新規 %>
-  <%= form_tag(credits_path, method: :post, id: "form_credits") do %>
+  <%= form_tag(credit_path, method: :post, id: "form_credits") do %>
   <% end %>
 <% end %>
 </div>
